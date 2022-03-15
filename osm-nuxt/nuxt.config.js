@@ -44,8 +44,37 @@ export default {
     '@nuxtjs/auth-next'
   ],
 
+  router: {
+    middleware: ['auth']
+  },
+
   auth: {
-    // Options
+    strategies: {
+      salesforce: {
+        scheme: 'oauth2',
+        endpoints: {
+          authorization: 'https://login.salesforce.com/services/oauth2/authorize',
+          token: 'https://login.salesforce.com/services/oauth2/token',
+          revoke: 'https://login.salesforce.com/services/oauth2/revoke',
+          userInfo: 'https://login.salesforce.com/services/oauth2/userinfo'
+        },
+        responseType: 'code',
+        grantType: 'authorization_code',
+        accessType: '',
+        redirectUri: 'http://localhost:3000/login',
+        logoutRedirectUri: undefined,
+        clientId: process.env.OSM_CLIENT_ID,
+        scope: ['api', 'web', 'custom_permissions'],
+        state: process.env.OAUTH_UNIQUE_STATE,
+        codeChallengeMethod: 'S256',
+        responseMode: '',
+        acrValues: '',
+        localStorage: {
+          prefix: 'osm.auth.'
+        }
+        // autoLogout: false
+      }
+    }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

@@ -46,6 +46,9 @@
 </template>
 
 <script>
+
+console.log('woo');
+
 export default {
   name: 'NuxtTutorial'
 }
