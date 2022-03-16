@@ -22,9 +22,7 @@
   "devDependencies": {
     "@nuxt/types": "^2.15.8",
     "@nuxt/typescript-build": "^2.1.0",
-    "@nuxtjs/tailwindcss": "^4.2.1",
     "chromedriver": "^96.0.0",
-    "nightwatch": "^1.7.12",
-    "postcss": "^8.4.4"
-  }
+    "nightwatch": "^1.7.12"
+    }
 }

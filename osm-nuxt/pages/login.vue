@@ -4,23 +4,17 @@
       Login
     </h2>
     <hr>
-    <b-alert v-if="errorMessage" show variant="danger">
+    <v-alert v-if="errorMessage" show dense type="error">
       {{ errorMessage }}
-    </b-alert>
-    <b-alert v-if="$auth.$state.redirect" show>
+    </v-alert>
+    <v-alert v-if="$auth.$state.redirect"  show dense type="warning">
       You have to login before accessing to
       <strong>{{ $auth.$state.redirect }}</strong>
-    </b-alert>
+    </v-alert>
     <b-row align-h="center" class="pt-4">
-      <b-col md="1" align-self="center">
-        <div class="text-center">
-          <b-badge pill>
-            OR
-          </b-badge>
-        </div>
-      </b-col>
+  
       <b-col md="4" class="text-center">
-        <b-card title="Salesforce Login" bg-variant="light">
+        <v-card title="Salesforce Login" bg-variant="light">
           <div v-for="s in strategies" :key="s.key" class="mb-2">
             <b-btn
               block
@@ -31,7 +25,7 @@
               Login with {{ s.name }}
             </b-btn>
           </div>
-        </b-card>
+        </v-card>
       </b-col>
     </b-row>
   </div>
