@@ -66,7 +66,6 @@ export default {
         },
         responseType: 'code',
         grantType: 'authorization_code',
-        accessType: '',
         redirectUri: 'http://localhost:3000/login',
         logoutRedirectUri: undefined,
         clientId: process.env.OSM_CLIENT_ID,
