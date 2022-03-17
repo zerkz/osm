@@ -1,31 +1,27 @@
+import colors from 'vuetify/es5/util/colors'
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
+    titleTemplate: '%s - osm-nuxt',
     title: 'osm-nuxt',
-    htmlAttrs: {
-      lang: 'en'
-    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-  ],
+  css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
+  plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -34,45 +30,60 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
-
-    // Simple usage
+    // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
-
   ],
-
-  vuetify: {
-    /* module options */
-  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    '@nuxtjs/auth-next'
+    // https://go.nuxtjs.dev/pwa
+    '@nuxtjs/pwa',
+    '@nuxtjs/auth-next',
   ],
 
-  router: {
-    middleware: ['auth']
+  // Axios module configuration: https://go.nuxtjs.dev/config-axios
+  axios: {
+    // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
+    baseURL: '/',
+  },
+
+  // PWA module configuration: https://go.nuxtjs.dev/pwa
+  pwa: {
+    manifest: {
+      lang: 'en',
+    },
+  },
+
+   router: {
+    //middleware: ['auth']
   },
 
   auth: {
+    plugins: [ '~/plugins/debug.js' ],
+    redirect: {
+      login: '/',
+      logout: '/logout',
+      callback: '/',
+      home: '/'
+    },
     strategies: {
       salesforce: {
         scheme: 'oauth2',
         endpoints: {
-          authorization: 'https://login.salesforce.com/services/oauth2/authorize',
-          token: 'https://login.salesforce.com/services/oauth2/token',
-          revoke: 'https://login.salesforce.com/services/oauth2/revoke',
-          userInfo: 'https://login.salesforce.com/services/oauth2/userinfo'
+          authorization: 'https://zdware-dev-ed.my.salesforce.com/services/oauth2/authorize',
+          token: 'https://zdware-dev-ed.my.salesforce.com/services/oauth2/token',
+          revoke: 'https://zdware-dev-ed.my.salesforce.com/services/oauth2/revoke',
+          userInfo: 'https://zdware-dev-ed.my.salesforce.com/services/oauth2/userinfo'
         },
         responseType: 'code',
         grantType: 'authorization_code',
-        accessType: '',
-        redirectUri: 'http://localhost:3000/login',
-        logoutRedirectUri: undefined,
+        redirectUri: 'http://localhost:3000/',
         clientId: process.env.OSM_CLIENT_ID,
         scope: ['api', 'web', 'custom_permissions'],
-        state: process.env.OAUTH_UNIQUE_STATE,
-        codeChallengeMethod: 'S256',
+       // state: process.env.OAUTH_UNIQUE_STATE,
+       // codeChallengeMethod: 'S256',
         responseMode: '',
         acrValues: '',
         localStorage: {
@@ -83,7 +94,25 @@ export default {
     }
   },
 
+  // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
+  vuetify: {
+    customVariables: ['~/assets/variables.scss'],
+    theme: {
+      dark: true,
+      themes: {
+        dark: {
+          primary: colors.blue.darken2,
+          accent: colors.grey.darken3,
+          secondary: colors.amber.darken3,
+          info: colors.teal.lighten1,
+          warning: colors.amber.base,
+          error: colors.deepOrange.accent4,
+          success: colors.green.accent3,
+        },
+      },
+    },
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  }
+  build: {},
 }
