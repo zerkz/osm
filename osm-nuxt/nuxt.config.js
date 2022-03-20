@@ -57,7 +57,7 @@ export default {
   },
 
    router: {
-    //middleware: ['auth']
+    middleware: ['auth']
   },
 
   auth: {
@@ -77,13 +77,13 @@ export default {
           revoke: 'https://zdware-dev-ed.my.salesforce.com/services/oauth2/revoke',
           userInfo: 'https://zdware-dev-ed.my.salesforce.com/services/oauth2/userinfo'
         },
-        responseType: 'code',
-        grantType: 'authorization_code',
+        responseType: 'token',
+        grantType: 'implicit',
         redirectUri: 'http://localhost:3000/',
         clientId: process.env.OSM_CLIENT_ID,
         scope: ['api', 'web', 'custom_permissions'],
-       // state: process.env.OAUTH_UNIQUE_STATE,
-       // codeChallengeMethod: 'S256',
+      //  state: process.env.OAUTH_UNIQUE_STATE,
+      //  codeChallengeMethod: 'S256',
         responseMode: '',
         acrValues: '',
         localStorage: {
