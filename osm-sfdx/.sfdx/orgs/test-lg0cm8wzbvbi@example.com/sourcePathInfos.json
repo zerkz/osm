@@ -1,0 +1,166 @@
+{
+  "c:\\Users\\zdware\\dev\\osm\\osm-sfdx\\force-app": {
+    "sourcePath": "c:\\Users\\zdware\\dev\\osm\\osm-sfdx\\force-app",
+    "isDirectory": true,
+    "modifiedTime": 1647743389298,
+    "changeTime": 1647743389298,
+    "contentHash": "b28b7af69320201d1cf206ebf28373980add1451",
+    "state": "n",
+    "isArtifactRoot": true,
+    "package": "force-app"
+  },
+  "c:\\Users\\zdware\\dev\\osm\\osm-sfdx\\force-app\\main": {
+    "sourcePath": "c:\\Users\\zdware\\dev\\osm\\osm-sfdx\\force-app\\main",
+    "isDirectory": true,
+    "modifiedTime": 1647743389298,
+    "changeTime": 1647743389298,
+    "contentHash": "7505d64a54e061b7acd54ccd58b49dc43500b635",
+    "state": "n",
+    "package": "force-app"
+  },
+  "c:\\Users\\zdware\\dev\\osm\\osm-sfdx\\force-app\\main\\default": {
+    "sourcePath": "c:\\Users\\zdware\\dev\\osm\\osm-sfdx\\force-app\\main\\default",
+    "isDirectory": true,
+    "modifiedTime": 1648095021645,
+    "changeTime": 1648095021645,
+    "contentHash": "ceb8794726dcd10a8d4f0e7d274189302b2dfe71",
+    "state": "u",
+    "package": "force-app"
+  },
+  "c:\\Users\\zdware\\dev\\osm\\osm-sfdx\\force-app\\main\\default\\aura": {
+    "sourcePath": "c:\\Users\\zdware\\dev\\osm\\osm-sfdx\\force-app\\main\\default\\aura",
+    "isDirectory": true,
+    "modifiedTime": 1647743389298,
+    "changeTime": 1647743389298,
+    "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+    "state": "n",
+    "package": "force-app"
+  },
+  "c:\\Users\\zdware\\dev\\osm\\osm-sfdx\\force-app\\main\\default\\lwc": {
+    "sourcePath": "c:\\Users\\zdware\\dev\\osm\\osm-sfdx\\force-app\\main\\default\\lwc",
+    "isDirectory": true,
+    "modifiedTime": 1647743675012,
+    "changeTime": 1647743675012,
+    "contentHash": "56f2d335ffa27c20b4ea310cf0214fa96f325894",
+    "state": "n",
+    "package": "force-app"
+  },
+  "c:\\Users\\zdware\\dev\\osm\\osm-sfdx": {
+    "sourcePath": "c:\\Users\\zdware\\dev\\osm\\osm-sfdx",
+    "isDirectory": true,
+    "modifiedTime": 1647743668680,
+    "changeTime": 1647743668680,
+    "contentHash": "07da07834d8f50a1018cf646c911906296572a7c",
+    "state": "n",
+    "isWorkspace": true
+  },
+  "c:\\Users\\zdware\\dev\\osm\\osm-sfdx\\force-app\\main\\default\\objects\\Sandbox__c": {
+    "sourcePath": "c:\\Users\\zdware\\dev\\osm\\osm-sfdx\\force-app\\main\\default\\objects\\Sandbox__c",
+    "isDirectory": true,
+    "modifiedTime": 1648095021630,
+    "changeTime": 1648095021630,
+    "contentHash": "0405f623094915d186e78e49720260c24d383bf9",
+    "state": "u",
+    "package": "force-app"
+  },
+  "c:\\Users\\zdware\\dev\\osm\\osm-sfdx\\force-app\\main\\default\\objects": {
+    "sourcePath": "c:\\Users\\zdware\\dev\\osm\\osm-sfdx\\force-app\\main\\default\\objects",
+    "isDirectory": true,
+    "modifiedTime": 1648095021627,
+    "changeTime": 1648095021627,
+    "contentHash": "02968200e61d23e46062af89cad027aaa3532ed0",
+    "state": "u",
+    "package": "force-app"
+  },
+  "c:\\Users\\zdware\\dev\\osm\\osm-sfdx\\force-app\\main\\default\\objects\\Sandbox__c\\listViews": {
+    "sourcePath": "c:\\Users\\zdware\\dev\\osm\\osm-sfdx\\force-app\\main\\default\\objects\\Sandbox__c\\listViews",
+    "isDirectory": true,
+    "modifiedTime": 1648095021630,
+    "changeTime": 1648095021630,
+    "contentHash": "0b3931647b535802350a588b8bf16d4ae6cc2ed6",
+    "state": "u",
+    "package": "force-app"
+  },
+  "c:\\Users\\zdware\\dev\\osm\\osm-sfdx\\force-app\\main\\default\\layouts": {
+    "sourcePath": "c:\\Users\\zdware\\dev\\osm\\osm-sfdx\\force-app\\main\\default\\layouts",
+    "isDirectory": true,
+    "modifiedTime": 1648095021635,
+    "changeTime": 1648095021635,
+    "contentHash": "801aebe7cc543c3a438f43d0db326e181fb08daa",
+    "state": "u",
+    "package": "force-app"
+  },
+  "c:\\Users\\zdware\\dev\\osm\\osm-sfdx\\force-app\\main\\default\\tabs": {
+    "sourcePath": "c:\\Users\\zdware\\dev\\osm\\osm-sfdx\\force-app\\main\\default\\tabs",
+    "isDirectory": true,
+    "modifiedTime": 1648095021637,
+    "changeTime": 1648095021637,
+    "contentHash": "dd9a786c42045588b0f05742879b901220d5d393",
+    "state": "u",
+    "package": "force-app"
+  },
+  "c:\\Users\\zdware\\dev\\osm\\osm-sfdx\\force-app\\main\\default\\profiles": {
+    "sourcePath": "c:\\Users\\zdware\\dev\\osm\\osm-sfdx\\force-app\\main\\default\\profiles",
+    "isDirectory": true,
+    "modifiedTime": 1648095021653,
+    "changeTime": 1648095021653,
+    "contentHash": "dd4bc5d00d5b87ac9dcfa94ec543d354d095c25c",
+    "state": "u",
+    "package": "force-app"
+  },
+  "c:\\Users\\zdware\\dev\\osm\\osm-sfdx\\force-app\\main\\default\\objects\\Sandbox__c\\listViews\\All.listView-meta.xml": {
+    "sourcePath": "c:\\Users\\zdware\\dev\\osm\\osm-sfdx\\force-app\\main\\default\\objects\\Sandbox__c\\listViews\\All.listView-meta.xml",
+    "size": 204,
+    "modifiedTime": 1648095021630,
+    "changeTime": 1648095021630,
+    "contentHash": "a09136a1a46c72265bcd1de0f4a07ba06ec1e9bd",
+    "isMetadataFile": true,
+    "state": "u",
+    "package": "force-app",
+    "metadataType": "ListView"
+  },
+  "c:\\Users\\zdware\\dev\\osm\\osm-sfdx\\force-app\\main\\default\\layouts\\Sandbox__c-Sandbox Layout.layout-meta.xml": {
+    "sourcePath": "c:\\Users\\zdware\\dev\\osm\\osm-sfdx\\force-app\\main\\default\\layouts\\Sandbox__c-Sandbox Layout.layout-meta.xml",
+    "size": 1947,
+    "modifiedTime": 1648095021635,
+    "changeTime": 1648095021635,
+    "contentHash": "11d783040f4136795b5cfb29705ebffa45e29dff",
+    "isMetadataFile": true,
+    "state": "u",
+    "package": "force-app",
+    "metadataType": "Layout"
+  },
+  "c:\\Users\\zdware\\dev\\osm\\osm-sfdx\\force-app\\main\\default\\objects\\Sandbox__c\\Sandbox__c.object-meta.xml": {
+    "sourcePath": "c:\\Users\\zdware\\dev\\osm\\osm-sfdx\\force-app\\main\\default\\objects\\Sandbox__c\\Sandbox__c.object-meta.xml",
+    "size": 5289,
+    "modifiedTime": 1648095021629,
+    "changeTime": 1648095021629,
+    "contentHash": "3326803b34d246f5fa073164d315dec5ac16c3e6",
+    "isMetadataFile": true,
+    "state": "u",
+    "package": "force-app",
+    "metadataType": "CustomObject"
+  },
+  "c:\\Users\\zdware\\dev\\osm\\osm-sfdx\\force-app\\main\\default\\tabs\\Sandbox__c.tab-meta.xml": {
+    "sourcePath": "c:\\Users\\zdware\\dev\\osm\\osm-sfdx\\force-app\\main\\default\\tabs\\Sandbox__c.tab-meta.xml",
+    "size": 266,
+    "modifiedTime": 1648095021637,
+    "changeTime": 1648095021637,
+    "contentHash": "59894f3d74fea15d0f2ad9e7da1e438daa5be304",
+    "isMetadataFile": true,
+    "state": "u",
+    "package": "force-app",
+    "metadataType": "CustomTab"
+  },
+  "c:\\Users\\zdware\\dev\\osm\\osm-sfdx\\force-app\\main\\default\\profiles\\Admin.profile-meta.xml": {
+    "sourcePath": "c:\\Users\\zdware\\dev\\osm\\osm-sfdx\\force-app\\main\\default\\profiles\\Admin.profile-meta.xml",
+    "size": 21621,
+    "modifiedTime": 1648095021653,
+    "changeTime": 1648095021653,
+    "contentHash": "be3e71d178b75287801a92d7562b3baa81902b43",
+    "isMetadataFile": true,
+    "state": "u",
+    "package": "force-app",
+    "metadataType": "Profile"
+  }
+}
