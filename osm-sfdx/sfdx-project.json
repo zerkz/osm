@@ -3,6 +3,9 @@
     {
       "path": "force-app",
       "default": true
+    },
+    {
+      "path": "lwc-lookup"
     }
   ],
   "name": "osm-sfdx",
