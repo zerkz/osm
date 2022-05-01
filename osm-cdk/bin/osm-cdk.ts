@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import 'source-map-support/register';
 import * as cdk from 'aws-cdk-lib';
-import { OsmCdkStack } from '../lib/osm-cdk-stack';
+import { OsmCdkStack } from '../lib/osm-cdk-lambda';
 
 const app = new cdk.App();
 new OsmCdkStack(app, 'OsmCdkStack', {
